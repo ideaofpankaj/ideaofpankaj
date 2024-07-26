@@ -28,7 +28,7 @@ My journey has taken me through every major version of Java from 1.3 to 21, maki
 - **Data Modeling & Management**: Strong expertise in designing schemas
 
 ### DevOps & Cloud:
-- **PCF & Openshift / Docker & Kubernatics **: Cloud infrastructure services
+- **PCF & Openshift **: Cloud infrastructure services
 - **CI/CD Pipelines**: Jenkins, GitHub Actions
 - **Monitoring & Logging**: Splunk, Grafana
 
