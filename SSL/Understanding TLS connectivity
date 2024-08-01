@@ -2,6 +2,74 @@ Hello Folks,
 
 Today i am going to discuss and try to expain a very important topic i.e. SSL/TLS connectivity while deloping an HTTPS endpoint for a Microservice.
 
+This session is going from basic understanding of encryption / decryption and there after we will discuss how SSL/TLS can be configured over endpoint
+exposed for a microservice.
+
+
+
+What is Encryption ?
+
+Encryption is a crucial aspect of securing data in today's digital world. It ensures that information remains confidential, 
+especially when transmitted over networks like the Internet. 
+There are two primary types of encryption techniques used in cryptography: s
+ymmetric encryption and asymmetric encryption. 
+
+Let's explore each of these, how they work, their differences, and their applications.
+
+
+Symmetric Encryption
+
+What is Symmetric Encryption?
+
+Symmetric encryption is a type of encryption where the same key is used for both encryption and decryption of data. 
+This means that both the sender and receiver must possess the same secret key, which they use to encrypt and decrypt messages.
+
+How It Works
+
+1. Key Generation: A secret key is generated, which is shared between the sender and receiver.
+2. Encryption: The sender encrypts the plaintext message using the secret key.
+3. Transmission: The encrypted message (ciphertext) is sent to the receiver.
+4. Decryption: The receiver decrypts the ciphertext using the same secret key to retrieve the original message.
+
+Example
+
+Let's take a simple example to understand symmetric encryption. Suppose Santosh wants to send a secret message to Kapil:
+
+Key: SecretKey123
+Plaintext: Hello Kapil!
+
+Encryption:
+  Algorithm: AES (Advanced Encryption Standard)
+  Ciphertext: U2FsdGVkX19A9sD8KJ75Fm5n
+
+Santosh uses the key SecretKey123 to encrypt Hello Kapil!, resulting in the ciphertext U2FsdGVkX19A9sD8KJ75Fm5n.
+
+Decryption:
+Kapil uses the same key SecretKey123 to decrypt U2FsdGVkX19A9sD8KJ75Fm5n, retrieving the original message: Hello Kapil!.
+
+Advantages:
+  Speed: Symmetric encryption algorithms are generally faster than asymmetric ones due to simpler mathematical operations.
+  Efficiency: Requires less computational resources, making it suitable for encrypting large volumes of data.
+
+Disadvantages:
+
+  Key Distribution: The primary challenge is securely distributing the secret key to both parties. If the key is intercepted, the security is compromised.
+  Scalability: Each pair of users requires a unique key, leading to a large number of keys in larger systems.
+
+Common Algorithms:
+
+  1. AES (Advanced Encryption Standard): Widely used in modern applications, offering strong encryption and performance.
+  2. DES (Data Encryption Standard): An older standard that has been largely replaced by AES due to security concerns.
+  3. 3DES (Triple DES): An extension of DES that applies encryption three times for increased security.
+  4. RC4: A stream cipher that is fast but less secure, being phased out in favor of more secure alternatives.
+
+Use Cases:
+
+Data Encryption: Encrypting data at rest, such as files on a hard drive.
+Network Security: Securing communication channels, such as VPNs and secure shell (SSH) sessions.
+Database Encryption: Protecting sensitive information in databases.
+
+
 
 
 
